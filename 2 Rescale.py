@@ -8,7 +8,7 @@ def rescaleFrame(frame,scale=0.75):
     height = int(frame.shape[0]*scale)
     dimension = (width,height)
     return cv.resize(frame,dimension,interpolation=cv.INTER_AREA )
-capture = cv.VideoCapture('Iron_M an.mp4')
+capture = cv.VideoCapture('Iron_Man.mp4')
 
 while True:
     isTrue, frame = capture.read()
