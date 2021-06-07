@@ -43,9 +43,6 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 # Train the Recognizer on the features list and the labels list
 face_recognizer.train(features, labels)
 
-# haar_cascade = face_recognizer()
-face_recognizer = cv.face.LBPHFaceRecognizer_create()
-face_recognizer.read('face_trained.yml')
 img = cv.imread('Chandler.jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # Detect the face in the image
